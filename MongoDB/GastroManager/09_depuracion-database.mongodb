@@ -1,0 +1,6 @@
+use('dbGastroManager')
+
+//retirar la ensalada cesar de la carta
+ db.menu.deleteOne({
+  nombre: "Ensalada César"
+ })

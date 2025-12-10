@@ -1,0 +1,9 @@
+use("dbStreamCloud")
+
+// listar todas las series que sean originales
+// mostrar solamente el titulo y las temporadas
+
+db.catalogo.find(
+  { tipo: "Serie", esOriginal: true },
+  { titulo: 1, temporadas: 1, _id:0 }
+)
